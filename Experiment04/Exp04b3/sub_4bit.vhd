@@ -43,7 +43,7 @@ end full_subtractor;
 
 architecture Behavioral of full_subtractor is
 begin
-    diff <= a xor b xor bin;
+    diff <= b xor a xor bin;
     bout <= ((not a) and b) or ((not (a xor b)) and bin);
 end Behavioral;
 
